@@ -8,6 +8,8 @@ instead of opening another.
 The picker opens as an overlay. It shows each repo as `owner/repo`, with a
 preview of `git status` and the last ten commits.
 
+![The repo-tab picker: typing "vim" narrows 42 repos to 9, with neovim/neovim selected and its git status and log in the preview](docs/picker.svg)
+
 ## Requirements
 
 - herdr 0.9 or later
