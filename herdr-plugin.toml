@@ -1,0 +1,21 @@
+# repo-tab: a ghq repo picker (fzf) that opens the chosen repo as a tab in one
+# herdr workspace, instead of a workspace per repo. Shell only, no build step.
+
+id = "repo-tab"
+name = "repo-tab"
+version = "0.1.0"
+description = "Pick a ghq repo and open it as a tab in a single workspace."
+min_herdr_version = "0.9.0"
+platforms = ["macos", "linux"]
+
+[[actions]]
+id = "open"
+title = "open repo as a tab"
+description = "Pick a ghq repo and open (or jump to) its tab."
+command = ["sh", "repo-tab.sh", "open"]
+
+[[panes]]
+id = "picker"
+title = "repo"
+placement = "overlay"
+command = ["sh", "repo-tab.sh", "pick"]
